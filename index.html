@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta name="viewport" content="width=device-width, initialscale=1.0, user-scalable=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Web Accessibility 2019 Q1 BY</title>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css'>
@@ -10,13 +11,13 @@
 </head>
 
 <body>
-  <div class="hero hero-bg is-fullheight">
+  <header class="hero hero-bg is-fullheight">
     <div class="hero-head">
       <div class="navbar">
         <div class="container">
           <div class="navbar-brand">
-            <a class="navbar-item logo-link">
-              <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg">
+            <a class="navbar-item logo-link" href="#">
+              <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" alt="Epam logo">
             </a>
             <span class="navbar-burger burger" data-target="navbarMenu">
               <span></span>
@@ -25,10 +26,10 @@
             </span>
           </div>
 
-          <div id="navbarMenu" class="navbar-menu">
+          <nav id="navbarMenu" class="navbar-menu" aria-labelledby="skip-menu-section">
             <div class="navbar-end">
               <span class="navbar-item">
-                <a class="button is-white is-outlined">
+                <a class="button is-white is-outlined" href="#">
                   <span class="icon">
                     <i class="fa fa-home"></i>
                   </span>
@@ -36,7 +37,7 @@
                 </a>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined">
+                <a class="button is-white is-outlined" href="#">
                   <span class="icon">
                     <i class="fab fa-superpowers"></i>
                   </span>
@@ -44,7 +45,7 @@
                 </a>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined">
+                <a class="button is-white is-outlined" href="#">
                   <span class="icon">
                     <i class="fa fa-book"></i>
                   </span>
@@ -52,7 +53,7 @@
                 </a>
               </span>
               <span class="navbar-item">
-                <a class="button is-white is-outlined">
+                <a class="button is-white is-outlined" href="#">
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>
@@ -60,10 +61,11 @@
                 </a>
               </span>
             </div>
-          </div>
+          </nav>
         </div>
       </div>
     </div>
+  </header>
 
     <div class="hero-body">
       <div class="container has-text-centered">
@@ -78,14 +80,13 @@
                 <input class="input">
               </p>
               <p class="control">
-                <a class="button is-info">Notify Me</a>
+                <a class="button is-info" href="#">Notify Me</a>
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
   <div class="section" id="about">
     <div class="section-heading has-text-centered">
@@ -103,7 +104,7 @@
 
     <div class="content container">
       <div class="is-1 title">Hello World</div>
-      <p>Lorem ipsum<sup><a>[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
+      <p>Lorem ipsum<sup><a href="#" target="_blank" aria-label="lorem ipsum">[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
       <div class="is-2 title">Second level</div>
       <p>Curabitur accumsan turpis pharetra <b>augue tincidunt</b> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
       <ul>
@@ -113,7 +114,7 @@
         <li>- Ut non enim metus.</li>
       </ul>
       <div class="is-3 title">Third level</div>
-      <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a>non ante</a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
+      <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a href="#" target="_blank" aria-label="non ante">non ante</a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
       <ol class="ol-list">
         <li>Donec blandit a lorem id convallis.</li>
         <li>Cras gravida arcu at diam gravida gravida.</li>
@@ -209,7 +210,7 @@
               <div class="content">
                 <div>Tristique senectus et netus et.</div>
                 <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-                <p><a>Learn more</a></p>
+                <p><a href="#" target="_blank">Learn more</a></p>
               </div>
             </div>
           </div>
@@ -225,7 +226,7 @@
                 <div>Tempor orci dapibus ultrices in.</div>
                 <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
                   sed risus.</p>
-                <p><a>Learn more</a></p>
+                <p><a href="#" target="_blank">Learn more</a></p>
               </div>
             </div>
           </div>
@@ -240,7 +241,7 @@
               <div class="content">
                 <div> Leo integer malesuada nunc vel risus. </div>
                 <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                <p><a>Learn more</a></p>
+                <p><a href="#" target="_blank">Learn more</a></p>
               </div>
             </div>
           </div>
@@ -259,19 +260,19 @@
     <div class="tabs is-boxed is-centered main-menu" id="nav">
       <ul>
         <li data-target="pane-1" id="1" class="is-active">
-          <a>
+          <a href="#">
             <span class="icon is-small"><i class="fa fa-image"></i></span>
             <span>Pictures</span>
           </a>
         </li>
         <li data-target="pane-3" id="3">
-          <a>
+          <a href="#">
             <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
             <span>Team</span>
           </a>
         </li>
         <li data-target="pane-4" id="4">
-          <a>
+          <a href="#">
             <span class="icon is-small"><i class="fa fa-film"></i></span>
             <span>Video</span>
           </a>
