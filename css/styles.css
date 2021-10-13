@@ -13,6 +13,11 @@ a:focus {
   margin-bottom: -1px !important;
   position: relative;
 }
+
+.blue-bg a {
+  color: #FFF;
+}
+
 .tab-content {
   padding: 2rem;
 }
@@ -158,6 +163,10 @@ li {
   min-height: 70vh;
 }
 
+.hero.info {
+  background-color: #244F99;
+}
+
 .blockquote {
   background-color: #f5f5f5;
   border-left: 5px solid #dbdbdb;
@@ -180,4 +189,64 @@ li {
   width: 40px;
   height: 40px;
   background-size: contain;
+}
+
+.info-button {
+  border-color: transparent;
+  color: #FFF;
+  background-color: #244F99;
+}
+
+.link-button {
+  border-color: transparent;
+  color: #FFF;
+  background-color: #3273DC;
+}
+
+.text-button {
+  background-color: transparent;
+  border-color: transparent;
+  color: #4A4A4A;
+  text-decoration: underline;
+}
+
+.text-grey-light {
+  color: #4A4A4A;
+}
+
+.button.info-button:focus:not(:active),
+.button.link-button:focus:not(:active),
+.button.text-button:focus:not(:active) {
+  box-shadow: 0 0 2px 2px #fff, 0 0 3px 3px #000;
+}
+
+.button.info-button:focus:not(:active) {
+  box-shadow: 0 0 2px 2px #fff, 0 0 3px 3px #000;
+}
+
+.danger {
+  background-color: #FF8AA1;
+  color: #1A1A1A;
+}
+
+.primary {
+  background-color: #42FFE3;
+  color: #4A4A4A;
+}
+
+.success {
+  background-color: #5AED8D;
+  color: #1C1C1C;
+}
+
+.grey-bg {
+  color: #262626;
+}
+
+.blue-bg {
+  color: #F2F2F2;
+}
+
+.   a {
+  color: #024A92;
 }
