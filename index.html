@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header class="hero hero-bg is-fullheight">
+  <header class="hero hero-bg is-fullheight" role="banner">
     <div class="hero-head">
       <div class="navbar">
         <div class="container">
@@ -19,18 +19,18 @@
             <a class="navbar-item logo-link" href="#">
               <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" alt="Epam logo">
             </a>
-            <span class="navbar-burger burger" data-target="navbarMenu">
+            <span class="navbar-burger burger" data-target="navbarMenu" aria-haspopup="true" role="menuitem">
               <span></span>
               <span></span>
               <span></span>
             </span>
           </div>
 
-          <nav id="navbarMenu" class="navbar-menu" aria-labelledby="skip-menu-section">
+          <nav id="navbarMenu" class="navbar-menu" aria-labelledby="skip-menu-section" role="navigation">
             <div class="navbar-end">
               <span class="navbar-item">
                 <a class="button is-white is-outlined" href="#">
-                  <span class="icon">
+                  <span class="icon" aria-hidden="true">
                     <i class="fa fa-home"></i>
                   </span>
                   <span>Home</span>
@@ -38,7 +38,7 @@
               </span>
               <span class="navbar-item">
                 <a class="button is-white is-outlined" href="#">
-                  <span class="icon">
+                  <span class="icon" aria-hidden="true">
                     <i class="fab fa-superpowers"></i>
                   </span>
                   <span>Examples</span>
@@ -46,7 +46,7 @@
               </span>
               <span class="navbar-item">
                 <a class="button is-white is-outlined" href="#">
-                  <span class="icon">
+                  <span class="icon" aria-hidden="true">
                     <i class="fa fa-book"></i>
                   </span>
                   <span>Documentation</span>
@@ -54,7 +54,7 @@
               </span>
               <span class="navbar-item">
                 <a class="button is-white is-outlined" href="#">
-                  <span class="icon">
+                  <span class="icon" aria-hidden="true">
                     <i class="fab fa-github"></i>
                   </span>
                   <span>View Source</span>
@@ -87,8 +87,8 @@
     </div>
   </header>
 
-  <main>
-    <div class="section" id="about">
+  <main role="main">
+    <section class="section" id="about" aria-label="About Us">
       <div class="section-heading has-text-centered">
         <h1 class="title is-2">About Us</h1>
         <div class="subtitle is-5">We of all trades, master of "some"</div>
@@ -191,7 +191,7 @@
         <h6 class="title">Sixth level</h6>
         <p>Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus.</p>
       </div>
-    </div>
+    </section>
 
     <div class="hero has-background-grey-light">
       <div class="container features">
@@ -258,22 +258,22 @@
         </div>
       </div>
       <div class="tabs blue-bg is-boxed is-centered main-menu" id="nav">
-        <ul>
-          <li data-target="pane-1" id="1" class="is-active">
-            <a href="#">
-              <span class="icon is-small"><i class="fa fa-image"></i></span>
+        <ul role="tablist">
+          <li data-target="pane-1" id="1" class="is-active" aria-haspopup="true" role="tab">
+            <a href="#" aria-control="pane-1">
+              <span class="icon is-small" aria-hidden="true"><i class="fa fa-image"></i></span>
               <span>Pictures</span>
             </a>
           </li>
-          <li data-target="pane-3" id="3">
-            <a href="#">
-              <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
+          <li data-target="pane-3" id="3" aria-haspopup="true" role="tab">
+            <a href="#" aria-control="pane-2">
+              <span class="icon is-small" aria-hidden="true"><i class="fab fa-superpowers"></i></span>
               <span>Team</span>
             </a>
           </li>
-          <li data-target="pane-4" id="4">
-            <a href="#">
-              <span class="icon is-small"><i class="fa fa-film"></i></span>
+          <li data-target="pane-4" id="4" aria-haspopup="true" role="tab">
+            <a href="#" aria-control="pane-3">
+              <span class="icon is-small" aria-hidden="true"><i class="fa fa-film"></i></span>
               <span>Video</span>
             </a>
           </li>
@@ -411,7 +411,7 @@
       </div>
     </div>
 
-    <div class="section has-background-grey-lighter">
+    <section class="section has-background-grey-lighter" aria-label="Events">
       <div class="container has-text-centered">
           <div class="section-heading has-text-centered">
             <h2 class="title">Upcoming events</h2>
@@ -484,9 +484,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section" aria-label="Services">
       <div class="section-heading has-text-centered">
         <h2 class="title">Services</h2>
         <h5 class="subtitle">What can I do for you?</h5>
@@ -532,9 +532,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="section has-background-grey-lighter">
+    <section class="section has-background-grey-lighter" aria-label="Photos">
       <div class="container">
         <div class="section-heading has-text-centered">
           <h2 class="title">Photos from past events</h2>
@@ -698,9 +698,9 @@
         </div>
       </div>
       </div>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section" aria-label="Forum">
       <div class="container">
         <div class="section-heading has-text-centered">
           <h2 class="title">Forum</h2>
@@ -859,31 +859,31 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="section has-background-light">
+    <section class="section has-background-light" aria-lable="Contact us">
       <div class="container">
         <div class="section-heading has-text-centered">
           <h2 class="title">Contact us</h2>
           <h5 class="subtitle">Don't hesitate, ask anything</h5>
         </div>
 
-        <form class="column is-half is-offset-one-quarter box" role="search">
+        <form class="column is-half is-offset-one-quarter box" role="search" aria-label="Contact Us">
           <div class="field">
             <label class="label">Name</label>
             <div class="control">
-              <input class="input" type="text" placeholder="Text input">
+              <input class="input" type="text" placeholder="Text input" aria-label="Name">
             </div>
           </div>
 
           <div class="field">
             <label class="label">Username</label>
             <div class="control has-icons-left has-icons-right">
-              <input class="input is-success" type="text">
-              <span class="icon is-small is-left">
+              <input class="input is-success" type="text" placeholder="Text input" aria-label="Username">
+              <span class="icon is-small is-left" aria-hidden="true">
                 <i class="fas fa-user"></i>
               </span>
-              <span class="icon is-small is-right">
+              <span class="icon is-small is-right" aria-hidden="true">
                 <i class="fas fa-check"></i>
               </span>
             </div>
@@ -893,11 +893,11 @@
           <div class="field">
             <label class="label">Email</label>
             <div class="control has-icons-left has-icons-right">
-              <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
-              <span class="icon is-small is-left">
+              <input class="input is-danger" type="email" placeholder="Email input" value="hello@" aria-label="Email">
+              <span class="icon is-small is-left" aria-hidden="true">
                 <i class="fas fa-envelope"></i>
               </span>
-              <span class="icon is-small is-right">
+              <span class="icon is-small is-right" aria-hidden="true">
                 <i class="fas fa-exclamation-triangle"></i>
               </span>
             </div>
@@ -955,10 +955,10 @@
           </div>
         </form>
       </div>
-    </div>
+    </section>
   </main>
 
-  <footer class="footer-link">
+  <footer class="footer-link" role="contentinfo">
     <div class="container">
       <div class="columns">
         <div class="column is-3 is-offset-2">
