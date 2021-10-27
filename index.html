@@ -259,19 +259,19 @@
       </div>
       <div class="tabs blue-bg is-boxed is-centered main-menu" id="nav">
         <ul role="tablist">
-          <li data-target="pane-1" id="1" class="is-active" aria-haspopup="true" role="tab">
+          <li data-target="pane-1" id="1" class="is-active" role="tab" aria-selected="true">
             <a href="#" aria-control="pane-1">
               <span class="icon is-small" aria-hidden="true"><i class="fa fa-image"></i></span>
               <span>Pictures</span>
             </a>
           </li>
-          <li data-target="pane-3" id="3" aria-haspopup="true" role="tab">
+          <li data-target="pane-3" id="3" aria-haspopup="true" role="tab" aria-selected="true">
             <a href="#" aria-control="pane-2">
               <span class="icon is-small" aria-hidden="true"><i class="fab fa-superpowers"></i></span>
               <span>Team</span>
             </a>
           </li>
-          <li data-target="pane-4" id="4" aria-haspopup="true" role="tab">
+          <li data-target="pane-4" id="4" aria-haspopup="true" role="tab" aria-selected="true">
             <a href="#" aria-control="pane-3">
               <span class="icon is-small" aria-hidden="true"><i class="fa fa-film"></i></span>
               <span>Video</span>
@@ -868,18 +868,18 @@
           <h5 class="subtitle">Don't hesitate, ask anything</h5>
         </div>
 
-        <form class="column is-half is-offset-one-quarter box" role="search" aria-label="Contact Us">
+        <form class="column is-half is-offset-one-quarter box" role="complementary" aria-label="Contact Us">
           <div class="field">
-            <label class="label">Name</label>
+            <label class="label" for="firstName">Name</label>
             <div class="control">
-              <input class="input" type="text" placeholder="Text input" aria-label="Name">
+              <input class="input" id="firstName" type="text" placeholder="First Name" aria-label="Name">
             </div>
           </div>
 
           <div class="field">
-            <label class="label">Username</label>
+            <label class="label" for="userName">Username</label>
             <div class="control has-icons-left has-icons-right">
-              <input class="input is-success" type="text" placeholder="Text input" aria-label="Username">
+              <input class="input is-success" id="userName" type="text" placeholder="User Name" aria-label="Username" aria-required="true" aria-invalid="false">
               <span class="icon is-small is-left" aria-hidden="true">
                 <i class="fas fa-user"></i>
               </span>
@@ -891,9 +891,9 @@
           </div>
 
           <div class="field">
-            <label class="label">Email</label>
+            <label class="label" for="email">Email</label>
             <div class="control has-icons-left has-icons-right">
-              <input class="input is-danger" type="email" placeholder="Email input" value="hello@" aria-label="Email">
+              <input class="input is-danger" id="email" type="email" placeholder="Email" value="hello@" aria-label="Email" aria-required="true" aria-invalid="true">
               <span class="icon is-small is-left" aria-hidden="true">
                 <i class="fas fa-envelope"></i>
               </span>
@@ -905,10 +905,10 @@
           </div>
 
           <div class="field">
-            <label class="label">Subject</label>
+            <label class="label" for="options">Subject</label>
             <div class="control">
               <div class="select">
-                <select>
+                <select id="options">
                   <option>Select dropdown</option>
                   <option>With options</option>
                 </select>
@@ -917,16 +917,16 @@
           </div>
 
           <div class="field">
-            <label class="label">Message</label>
+            <label class="label" for="message">Message</label>
             <div class="control">
-              <textarea class="textarea" placeholder="Textarea"></textarea>
+              <textarea class="textarea" id="message" placeholder="Textarea"></textarea>
             </div>
           </div>
 
           <div class="field">
             <div class="control">
-              <label class="checkbox">
-                <input type="checkbox">
+              <label class="checkbox" for="agreement">
+                <input type="checkbox" id="agreement">
                 I agree to the <a>terms and conditions</a>
               </label>
             </div>
@@ -934,12 +934,12 @@
 
           <div class="field">
             <div class="control">
-              <label class="radio">
-                <input type="radio" name="question">
+              <label class="radio" for="yesAnswer">
+                <input type="radio" id="yesAnswer" name="question">
                 Yes
               </label>
-              <label class="radio">
-                <input type="radio" name="question">
+              <label class="radio" for="noAnswer">
+                <input type="radio" id="noAnswer" name="question">
                 No
               </label>
             </div>
