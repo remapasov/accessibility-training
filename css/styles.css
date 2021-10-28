@@ -21,13 +21,30 @@ a:focus {
 .tab-content {
   padding: 2rem;
 }
-.tab-pane {
-  display: none;
+
+.tab-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+  background-color: transparent;
+  color: #FFF;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
 }
-.tab-pane.is-active {
-  display: block;
-  position: relative;
+
+.tab-control:hover {
+  background-color: rgba(10,10,10,.1);
 }
+
+.tab-control[aria-selected="true"],
+.tab-control[aria-selected="true"]:hover {
+  background-color: #FFF;
+  border-color: #DBDBDB;
+  border-bottom-color: transparent;
+  color: #3273DC;
+}
+
 .is-active {
   display: initial;
 }
